@@ -1,0 +1,64 @@
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-container{
+    color: darkorange;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    padding: .5em 0 .5em 0;
+    width: 60em;
+    flex-wrap: wrap;
+    margin-left: 20%;
+}
+.flex-item{
+    border-radius: 10px;
+    text-align: center;
+    height: 6em;
+    line-height: 2em;
+    flex-basis: 6em;
+    flex-grow: initial;
+    align-items: stretch;
+    flex-wrap: wrap;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+}
+h1{
+    text-align: center;
+}
+.bc-image{
+    background-image: url("the-map.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+.front, .back{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    position:absolute;
+    justify-content: center;
+    align-items: center;
+}
+.back{
+    background-color: darkorange;
+    color: white;
+    position:absolute;
+    z-index:1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.front{
+    background-color: bisque;
+    color: darkorange;
+    position: absolute;
+    z-index:2;
+    backface-visibility: hidden;
+}
+
+.flex-item:hover {
+    transform: rotateY(180deg);
+}
