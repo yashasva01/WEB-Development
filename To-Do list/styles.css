@@ -1,0 +1,34 @@
+#container{
+    text-align: center;
+    margin-top: 10px;
+}
+#add-task-button{
+    background-color: rgba(147, 112, 219, 0.67);
+    color: white;
+    border-radius: 15px;
+}
+#input-task{
+    border-bottom: solid;
+    border-color: mediumpurple;
+    outline: none;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+}
+.delete-btn{
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    font-size: 25px;
+    line-height: 0;
+    text-align: center;
+    color: white;
+    background-color: crimson;
+    border-radius: 50%;
+    outline: 0;
+    border: 0;
+    transform: rotate(45deg);
+}
+ul{
+    list-style-type: none;
+}
